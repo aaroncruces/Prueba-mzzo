@@ -32,6 +32,9 @@
             "Tests\\": "tests/"
         }
     },
+    "_comment": [
+        "post-install-cmd es puesto para que heroku funcione, igual que Procfile en la raiz del proyecto, https://stackoverflow.com/questions/47619860/laravel-5-4-on-heroku-forbidden-you-dont-have-permission-to-access-on-this-s"
+    ],
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
@@ -45,6 +48,10 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "chmod -R 775 public/"
         ]
     },
     "extra": {
