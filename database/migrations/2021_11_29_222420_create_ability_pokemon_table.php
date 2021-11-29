@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoryPokemonTable extends Migration
+class CreateAbilityPokemonTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateCategoryPokemonTable extends Migration
      */
     public function up()
     {
-        Schema::create('category_pokemon', function (Blueprint $table) {
-            
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories');
+        Schema::create('ability_pokemon', function (Blueprint $table) {
+            $table->unsignedBigInteger('ability_id');
+            $table->foreign('ability_id')->references('id')->on('abilities');
 
             $table->unsignedBigInteger('pokemon_id');
             $table->foreign('pokemon_id')->references('id')->on('pokemon');
@@ -30,6 +29,6 @@ class CreateCategoryPokemonTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category_pokemon');
+        Schema::dropIfExists('ability_pokemon');
     }
 }
