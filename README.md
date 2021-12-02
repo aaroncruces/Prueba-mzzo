@@ -31,4 +31,5 @@ Debe disponilizarnos en el ambiente git, y las especificaciones en Readme.
 
 ## Resolución del problema
 
-1. El diagrama de la base de datos se encuentra en [erd.svg](erd.svg)**
+1. El diagrama de la base de datos se encuentra en [erd.svg](erd.svg).
+2. Los comandos artisan para la creacion de la base de datos y llenarla, se encuentra en [artisan_commands.sh](artisan_commands.sh).
