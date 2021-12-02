@@ -1,6 +1,7 @@
 
+# PokeDesk
 
-## PokeDesk
+## Descripción del problema
 
 Emprenderé una búsqueda para capturar pokemones,
 pero antes necesito recopilar información acerca de ellos.
@@ -28,4 +29,6 @@ tal pantalla debe esta página con 10 resultados.
 
 Debe disponilizarnos en el ambiente git, y las especificaciones en Readme.
 
-Tienes 5 dias para entregarnos el desarrollo.
+## Resolución del problema
+
+1. El diagrama de la base de datos se encuentra en [erd.svg](erd.svg)**
