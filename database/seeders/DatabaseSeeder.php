@@ -18,15 +18,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //$testCategory=new Ability();
-        //$testCategory->name="abilidad de prueba";
-        // $testCategory->id=12;
-        // $testCategory->save();
-
         //defining tools
         $out = new ConsoleOutput();
-
-        
         $client = new Client();
         $api_url_pokemon='https://pokeapi.co/api/v2/pokemon/';
 
