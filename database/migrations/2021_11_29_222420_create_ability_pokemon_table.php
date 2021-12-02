@@ -15,10 +15,10 @@ class CreateAbilityPokemonTable extends Migration
     {
         Schema::create('ability_pokemon', function (Blueprint $table) {
             $table->unsignedBigInteger('ability_id');
-            $table->foreign('ability_id')->references('id')->on('abilities');
+            $table->foreign('ability_id')->references('id')->on('abilities')->onDelete('cascade');
 
             $table->unsignedBigInteger('pokemon_id');
-            $table->foreign('pokemon_id')->references('id')->on('pokemon');
+            $table->foreign('pokemon_id')->references('id')->on('pokemon')->onDelete('cascade');
         });
     }
 

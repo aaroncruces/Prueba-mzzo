@@ -16,6 +16,9 @@ php artisan key:generate
 php artisan migrate
 php artisan serve
 
+# install api rest client for php
+composer require guzzlehttp/guzzle 
+
 # For the project to work on heroku, add the Procfile
 # also, generate some key, pruebamzzo is the name of the project
 heroku config:set APP_KEY=base64:ZxXrGribmCMrwS1hi+hfxCQKoWHh19qCCsF82QTL5As= -a pruebamzzo

@@ -20,6 +20,7 @@ class CreatePokemonTable extends Migration
         Schema::create('pokemon', function (Blueprint $table) {
             $table->id();
             $table->string('name',100);
+            $table->string('sprite_front_default',100);
             $table->unsignedInteger('height');
             $table->unsignedInteger('weight');
             $table->unsignedInteger('base_experience');

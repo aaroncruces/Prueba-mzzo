@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Category;
+use App\Models\Ability;
 
 class Pokemon extends Model
 {
     use HasFactory;
-    public function categories()
+    public function abilities()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany(Ability::class);
     }
 }
